@@ -26,7 +26,7 @@ function App() {
   const darkMode = useStoreSelector((state) => state.dark.dark);
 
   useEffect(() => {
-    scrollHome(scrollProperties);
+    scrollHome();
     scrollAbout();
     scrollProject();
     scrollCert();

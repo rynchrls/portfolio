@@ -1,8 +1,8 @@
 import { gsap } from "gsap"
-import { Navigation } from "../lib/headerFunc"
+// import { Navigation } from "../lib/headerFunc"
 
 
-export const scrollHome = (scrollProperties: Navigation) => {
+export const scrollHome = () => {
 
     const tl = gsap.timeline()
 

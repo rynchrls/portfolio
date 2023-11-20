@@ -38,6 +38,7 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
         "https://api.emailjs.com/api/v1.0/email/send",
         data
       );
+      console.log(res.data)
       if(darkMode) {
         toast.success('Email Sent Successfully!', {
           position: "top-center",
