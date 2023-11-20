@@ -1,0 +1,39 @@
+{
+    "certDB": [
+        {
+            "id": 1,
+            "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-61173ae6-4eb6-4802-b385-60bc81cce7e7.jpg?v=1697441595000",
+            "title": "The Front-End Web Developer Bootcamp: HTML, CSS, JS & React",
+            "skills": "Skills: React.js, Sass, CSS3, HTML5, Javascript, Redux, react-router, Zustand, MongoDB, JSON, NPM, Framer motion, GSAP, Typescript, RESTful API, Tailwind CSS, Git and Github. ",
+            "url": "https://www.udemy.com/certificate/UC-61173ae6-4eb6-4802-b385-60bc81cce7e7/"
+        },
+        {
+            "id": 2,
+            "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-552564dc-da1a-4b72-b40d-d6f060207e84.jpg?v=1698749612000",
+            "title": "AMAZING | JavaScript Programming with Examples in One Day",
+            "skills": "Skills: Vanilla Javascript, NodeJS, ThreeJS, OOP, JS Libraries, Data Types, JS Variables, Functions, Algorithm, Data Structures, User Experience, JS Frameworks, GSAP, DOM Manipulation, SwiperJS, ES6 and ES5.",
+            "url": "https://www.udemy.com/certificate/UC-552564dc-da1a-4b72-b40d-d6f060207e84/"
+        },
+        {
+            "id": 3,
+            "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-0fed96f5-9fb4-4965-a11b-cfa0feba8ea7.jpg?v=1696912512000",
+            "title": "CSS Crash Course For Beginners",
+            "skills": "Skills: CSS3, Sass, Tailwind CSS, Pseudo Classes, Responsive Web, User Interface, Media query, Class and Id.",
+            "url": "https://www.udemy.com/certificate/UC-0fed96f5-9fb4-4965-a11b-cfa0feba8ea7/"
+        },
+        {
+            "id": 4,
+            "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-23b17156-fad8-4a15-b0e2-2102f518824e.jpg?v=1696842786000",
+            "title": "Web Development Wizardry: HTML & CSS Course for Beginners.",
+            "skills":"Skills: HTML Elements, CSS Properties, CSS Variables, Web Design, Figma, Landing Page, Dynamic and Static Web App.",
+            "url": "https://www.udemy.com/certificate/UC-23b17156-fad8-4a15-b0e2-2102f518824e/"
+        },
+        {
+            "id": 5,
+            "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-01ba4fde-b844-49bd-bde0-a5560793119e.jpg?v=1697272000000",
+            "title": "Mastering Wordpress: Wordpress Development and Monetization",
+            "skills": "Skills: Wordpress Development, Blog Pages, Elementor,Plugin Development, SEO, Theme and Plugin installation.",
+            "url": "https://www.udemy.com/certificate/UC-01ba4fde-b844-49bd-bde0-a5560793119e/"
+        }
+    ]
+}
