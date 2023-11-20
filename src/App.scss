@@ -3660,7 +3660,7 @@ a {
   .about-section {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 16px;
 
     .parallax {
       width: auto;
@@ -3771,8 +3771,8 @@ a {
             margin-bottom: 12px;
 
             h5 {
-              font-size: 15px;
-              font-weight: 700;
+              font-size: 14px;
+              font-weight: 600;
               color: var(--font-light);
             }
 
@@ -3819,7 +3819,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.5rem 1rem 0.5rem 0rem;
+        padding: 0.5rem .5rem 0.5rem 0rem;
 
         .timeline-wrapper {
           width: 100%;
@@ -4074,7 +4074,7 @@ a {
 
 @media screen and (max-width: 459px) {
   .project-section {
-    padding: 1.5rem;
+    padding: 16px;
     .project-header {
       margin-bottom: 5rem;
 
@@ -4286,7 +4286,7 @@ a {
 
 @media screen and (max-width: 400px) {
   .cert-section {
-  
+    padding: 16px;
     .cert-header {
       margin-bottom: 6rem;
       text-align: center;

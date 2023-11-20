@@ -8,7 +8,7 @@ interface props {
   darkMode: boolean;
 }
 
-const RESUME_FILE_URL: string = 'https://rynchrls.github.io/portfolio/ryanalcaraz.pdf'
+const RESUME_FILE_URL: string = 'https://rynchrls.github.io/portfolio/ryan_charles_alcaraz.pdf'
 
 const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
 
@@ -17,7 +17,7 @@ const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
   const downloadFileatURL = (url: string) => {
     const aTag = document.createElement("a")
     aTag.href = url;
-    aTag.setAttribute("download", 'ryanalcaraz.pdf');
+    aTag.setAttribute("download", 'ryan_charles_alcaraz.pdf');
     document.body.appendChild(aTag)
     aTag.click();
     aTag.remove()
