@@ -8,7 +8,7 @@ interface props {
   darkMode: boolean;
 }
 
-const RESUME_FILE_URL: string = 'http://localhost:3000/ryanalcaraz.pdf'
+const RESUME_FILE_URL: string = 'https://rynchrls.github.io/portfolio/ryanalcaraz.pdf'
 
 const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
 
