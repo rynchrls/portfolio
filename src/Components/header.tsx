@@ -9,7 +9,7 @@ import { FaPhoneAlt } from "@react-icons/all-files/fa/FaPhoneAlt";
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { useStoreDispatch } from "../lib/aboutStore";
+// import { useStoreDispatch } from "../lib/aboutStore";
 // import { Action } from "../lib/headerFunc";
 
 interface props {
@@ -53,7 +53,7 @@ const Header: React.FC<props> = ({ darkMode }) => {
       <div className={`line ${darkMode ? "line-dark" : ""}`}>
         <div></div>
       </div>
-      {/* <div
+      <div
         className={`links-account-wrapper ${
           darkMode ? "links-account-wrapper-dark" : ""
         }`}
@@ -76,7 +76,7 @@ const Header: React.FC<props> = ({ darkMode }) => {
             <h5>Github</h5>
           </div>
         </a>
-      </div> */}
+      </div>
     </nav>
   );
 };
