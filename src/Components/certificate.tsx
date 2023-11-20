@@ -19,7 +19,7 @@ const Certificate = forwardRef<HTMLDivElement, dark>(({darkMode}, ref) => {
   const [allCert, setAllCert] = useState<certification[]>(certDB.certDB);
 
   return (
-    <div className={`cert-section ${darkMode ? 'cert-section-dark' : ''}`} ref={ref}>
+    <section className={`cert-section section ${darkMode ? 'cert-section-dark' : ''}`} ref={ref} id="cert">
       <div className="cert-header">
         <h2 className="h2-light">Certification</h2>
         <p className="p-light">
@@ -27,12 +27,12 @@ const Certificate = forwardRef<HTMLDivElement, dark>(({darkMode}, ref) => {
           technologies I'll be using to develop front-end applications.
         </p>
       </div>
-      <section className="cert-wrapper">
+      <div className="cert-wrapper">
         {allCert.map((cert) => (
           <SingleCert cert={cert} setAllCert={setAllCert} key={cert.id} />
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 });
 

@@ -10,28 +10,38 @@ import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { scrollHome } from "./gsap/scrollAnimation";
-import { scrollAbout } from "./gsap/scrollAnimation";
-import { scrollProject } from "./gsap/scrollAnimation";
-import { scrollCert } from "./gsap/scrollAnimation";
-import { scrollContact } from "./gsap/scrollAnimation";
 
 import PreLoader from "./Components/preloader";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const scrollProperties = useStoreSelector((state) => state.Nav);
-
   const darkMode = useStoreSelector((state) => state.dark.dark);
 
   useEffect(() => {
-    scrollHome();
-    scrollAbout();
-    scrollProject();
-    scrollCert();
-    scrollContact();
-  }, [scrollProperties]);
+    let sec = document.querySelectorAll('section');
+    let links = document.querySelectorAll('nav a');
+
+
+    window.onscroll = () => {
+
+      sec.forEach(section => {
+        let top = window.scrollY;
+        let offset = section.offsetTop;
+        let height = section.offsetHeight;
+        let id = section.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          links.forEach(link => {
+            link.classList.remove('active');
+            document
+              .querySelector('nav a[href*=' + id + ']')
+              ?.classList.add('active');
+          });
+        }
+      });
+    };
+  }, [0]);
 
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -45,22 +55,21 @@ function App() {
     setTimeout(() => {
       window.scrollTo({
         top: 0,
-        left: 0
-      })
+        left: 0,
+      });
       setPreload(false);
     }, 2000);
-
   }, []);
 
   return (
-    <section
+    <div
       className={`default-section ${darkMode ? "default-section-dark" : ""}`}
     >
       <div className="wrapper">
         <PreLoader preload={preload} />
-        <section
+        <div
           className={`header-wrapper ${darkMode ? "header-wrapper-dark" : ""}`}
-          style={{ zIndex: preload ? -1 : 1}}
+          style={{ zIndex: preload ? -1 : 1 }}
         >
           <Header
             darkMode={darkMode}
@@ -70,14 +79,14 @@ function App() {
             cert={certRef}
             contact={contactRef}
           />
-        </section>
+        </div>
         <Hero darkMode={darkMode} ref={homeRef} />
         <About darkMode={darkMode} ref={aboutRef} />
         <Project darkMode={darkMode} ref={projectRef} />
         <Certificate darkMode={darkMode} ref={certRef} />
         <Contact darkMode={darkMode} ref={contactRef} />
       </div>
-    </section>
+    </div>
   );
 }
 

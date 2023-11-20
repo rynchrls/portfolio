@@ -120,19 +120,19 @@ const Project  = forwardRef<HTMLDivElement, dark>(({darkMode}, ref) => {
   const [project, setProject] = useState<Proj[]>(projectDB);
 
   return (
-    <div className={`project-section ${darkMode ? 'project-section-dark' : ''}`} ref={ref} >
+    <section className={`project-section section ${darkMode ? 'project-section-dark' : ''}`} ref={ref} id="project" >
       <div className="project-header">
         <h2 className="h2-light">Personal Projects</h2>
         <p className="p-light">
           Various web applications that I developed while I was learning.
         </p>
       </div>
-      <section className="project-wrapper">
+      <div className="project-wrapper">
         {project.map((proj) => (
           <SingleProject project={proj} setProject={setProject} key={proj.id} />
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 });
 

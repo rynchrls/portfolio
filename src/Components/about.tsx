@@ -140,12 +140,12 @@ const About = forwardRef<HTMLDivElement, dark>(({darkMode}, ref) => {
   const aboutStore = useStoreSelector(state => state.About.about)
 
   return (
-    <div className={`about-section ${darkMode ? 'about-section-dark' : ''}`} ref={ref}>
-      <section className="parallax">
+    <section className={`about-section section ${darkMode ? 'about-section-dark' : ''}`} ref={ref} id="about">
+      <div className="parallax">
         {aboutStore === 1 ? <FirstSlide about={about} setAbout={setAbout} /> : '' }
         {aboutStore === 2 ? <SecondSlide about={about} setAbout={setAbout}  /> : ''}
         {aboutStore === 3 ? <ThirdSlide about={about} setAbout={setAbout}  /> : ''}
-      </section>
+      </div>
       <div className="parallax-buttons">
         <button
           className={`first-slide ${aboutStore === 1 ? 'active-slide' : ''}`}
@@ -164,7 +164,7 @@ const About = forwardRef<HTMLDivElement, dark>(({darkMode}, ref) => {
           dispatch(Actions.Array3())
         }}>3</button>
       </div>
-    </div>
+    </section>
   );
 });
 

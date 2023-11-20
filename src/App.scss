@@ -17,6 +17,12 @@
   --accent-light: rgba(33, 222, 222, 1);
   --accent-dark: rgba(33, 222, 222, 1);
 }
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  background-color: var(--primary-light);
+}
 a {
   text-decoration: none;
 }
@@ -191,7 +197,7 @@ a {
       width: 26px;
       height: 26px;
       fill: var(--font-light);
-      margin-right: 0px;
+      margin-right: 12px;
     }
 
     .nav {
@@ -211,7 +217,7 @@ a {
       width: 26px;
       height: 26px;
       fill: var(--font-light);
-      margin-right: 0px;
+      margin-right: 12px;
     }
 
     .nav-links {
@@ -719,7 +725,7 @@ a {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      gap: 14px;
+      gap: 20px;
       transition: 0.3s;
 
       img {
@@ -919,7 +925,7 @@ a {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      gap: 14px;
+      gap: 20px;
       transition: 0.3s;
 
       img {
@@ -979,7 +985,7 @@ a {
 .contact-section {
   width: 100%;
   height: auto;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 12rem 2rem 2rem 2rem;
 
   h2 {
     margin-bottom: 6rem;
@@ -1665,7 +1671,7 @@ a {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      gap: 14px;
+      gap: 20px;
       transition: 0.3s;
 
       img {
@@ -1871,7 +1877,7 @@ a {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      gap: 14px;
+      gap: 20px;
       transition: 0.3s;
 
       img {
@@ -2477,43 +2483,21 @@ a {
     position: relative;
 
     .hero-header {
-      width: 100%;
       height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       margin-bottom: 5rem;
 
-      .mode {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
       .light {
-        border: 2px solid var(--accent-light);
         padding: 0.5rem 1.2rem 0.5rem 1.2rem;
-        background-color: transparent;
         font-size: 15px;
-        font-weight: 700;
-        color: var(--accent-light);
-        letter-spacing: 1px;
-        transition: 0.3s;
-        cursor: pointer;
       }
 
       .hero-line {
         width: 2px;
         height: 54px;
-        background-color: var(--font-light);
       }
       .dark {
-        border: 2px solid var(--accent-light);
-        background-color: var(--accent-light);
         padding: 0.5rem 1.2rem 0.5rem 1.2rem;
         font-size: 15px;
-        font-weight: 700;
-        color: var(--font-dark);
-        letter-spacing: 1px;
         transition: 0.3s;
         cursor: pointer;
       }
@@ -2633,45 +2617,19 @@ a {
     position: relative;
 
     .hero-header {
-      width: 100%;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       margin-bottom: 3rem;
 
-      .mode {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
       .light {
-        border: 2px solid var(--accent-light);
         padding: 0.5rem 1rem 0.5rem 1rem;
-        background-color: transparent;
         font-size: 12px;
-        font-weight: 700;
-        color: var(--accent-light);
-        letter-spacing: 1px;
-        transition: 0.3s;
-        cursor: pointer;
       }
 
       .hero-line {
-        width: 2px;
         height: 48px;
-        background-color: var(--font-light);
       }
       .dark {
-        border: 2px solid var(--accent-light);
-        background-color: var(--accent-light);
         padding: 0.5rem 1rem 0.5rem 1rem;
         font-size: 12px;
-        font-weight: 700;
-        color: var(--font-dark);
-        letter-spacing: 1px;
-        transition: 0.3s;
-        cursor: pointer;
       }
 
       h1 {
@@ -2785,45 +2743,23 @@ a {
     position: relative;
 
     .hero-header {
-      width: 100%;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 2rem;
 
       .mode {
-        display: flex;
-        align-items: center;
         gap: 10px;
       }
       .light {
-        border: 2px solid var(--accent-light);
         padding: 0.5rem 0.7rem 0.5rem 0.7rem;
-        background-color: transparent;
         font-size: 10px;
-        font-weight: 700;
-        color: var(--accent-light);
-        letter-spacing: 1px;
-        transition: 0.3s;
-        cursor: pointer;
       }
 
       .hero-line {
         width: 2px;
         height: 40px;
-        background-color: var(--font-light);
       }
       .dark {
-        border: 2px solid var(--accent-light);
-        background-color: var(--accent-light);
         padding: 0.5rem 0.7rem 0.5rem 0.7rem;
         font-size: 10px;
-        font-weight: 700;
-        color: var(--font-dark);
-        letter-spacing: 1px;
-        transition: 0.3s;
-        cursor: pointer;
+
       }
 
       h1 {

@@ -72,9 +72,10 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
   };
 
   return (
-    <div
-      className={`contact-section ${darkMode ? "contact-section-dark" : ""}`}
+    <section
+      className={`contact-section section ${darkMode ? "contact-section-dark" : ""}`}
       ref={ref}
+      id="contact"
     >
       <h2 className="h1-light">Get In Touch</h2>
       <form onSubmit={handleSubmit}>
@@ -138,7 +139,7 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
         pauseOnHover
         theme="light" />
       )}
-    </div>
+    </section>
   );
 });
 

@@ -25,7 +25,7 @@ const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
   }
 
   return (
-    <div className={`hero-section ${darkMode ? 'hero-section-dark' : ''}`} ref={ref} >
+    <section className={`hero-section section ${darkMode ? 'hero-section-dark' : ''}`} ref={ref} id="hero" >
       <header className="hero-header">
         <div className="mode">
           <span className="light" onClick={() => dispatch(Action.lightMode())}>Light</span>
@@ -34,7 +34,7 @@ const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
         </div>
         <h1 className="h3-light">Portfolio</h1>
       </header>
-      <section className="hero">
+      <div className="hero">
         <div className="left-hero">
           <p className="hero-p">Hello there!</p>
           <h2 className="h3-light">I'm Ryan,</h2>
@@ -61,8 +61,8 @@ const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
         <div className="right-hero">
           <img src={hero} width={500} />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 });
 

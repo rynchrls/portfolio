@@ -10,7 +10,7 @@ import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { useStoreDispatch } from "../lib/aboutStore";
-import { Action } from "../lib/headerFunc";
+// import { Action } from "../lib/headerFunc";
 
 interface props {
   darkMode: boolean;
@@ -21,43 +21,39 @@ interface props {
   contact: React.RefObject<HTMLDivElement>;
 }
 
-const Header: React.FC<props> = ({ darkMode,home, about,project,cert,contact }) => {
+const Header: React.FC<props> = ({ darkMode }) => {
+  // const dispatch = useStoreDispatch()
 
-  const dispatch = useStoreDispatch()
-
-  
   return (
-    <section
-      className={`header-section ${darkMode ? "header-section-dark" : ""}`}
-    >
+    <nav className={`header-section ${darkMode ? "header-section-dark" : ""}`}>
       <div className={`nav-side ${darkMode ? "nav-side-dark" : ""}`}>
         <GiHamburgerMenu />
         <h5 className="nav">Navigation</h5>
       </div>
-      <div className={`links ${darkMode ? "links-dark " : ""} h`} onClick={() => dispatch(Action.scrollToHome({name: home}))} >
-        <FaHome />
-        <h5 className="nav-links">Home</h5>
-      </div>
-      <div className={`links ${darkMode ? "links-dark" : ""} a`} onClick={() => dispatch(Action.scrollToAbout({ about: about }))} >
-        <FaUser />
-        <h5 className="nav-links" >About</h5>
-      </div>
-      <div className={`links ${darkMode ? "links-dark" : ""} p`} onClick={() => dispatch(Action.scrollToProject({ name: project }))} >
-        <FaCode />
-        <h5 className="nav-links" >Project</h5>
-      </div>
-      <div className={`links ${darkMode ? "links-dark" : ""} c1`} onClick={() => dispatch(Action.scrollToCert({ name: cert }))} >
-        <FaAward />
-        <h5 className="nav-links" >Certificate</h5>
-      </div>
-      <div className={`links ${darkMode ? "links-dark" : ""} c2`} onClick={() => dispatch(Action.scrollToContact({ name:contact }))} >
-        <FaPhoneAlt />
-        <h5 className="nav-links" >Contact</h5>
-      </div>
+        <a href="#hero" className={`links ${darkMode ? "links-dark " : ""} h active`}>
+          <FaHome />
+          <h5 className="nav-links">Home</h5>
+        </a>
+        <a href="#about" className={`links ${darkMode ? "links-dark" : ""} h`}>
+          <FaUser />
+          <h5 className="nav-links">About</h5>
+        </a>
+        <a href="#project" className={`links ${darkMode ? "links-dark" : ""} h`}>
+          <FaCode />
+          <h5 className="nav-links">Project</h5>
+        </a>
+        <a href="#cert" className={`links ${darkMode ? "links-dark" : ""} h`}>
+          <FaAward />
+          <h5 className="nav-links">Certificate</h5>
+        </a>
+        <a href="#contact" className={`links ${darkMode ? "links-dark" : ""} h`}>
+          <FaPhoneAlt />
+          <h5 className="nav-links">Contact</h5>
+        </a>
       <div className={`line ${darkMode ? "line-dark" : ""}`}>
         <div></div>
       </div>
-      <div
+      {/* <div
         className={`links-account-wrapper ${
           darkMode ? "links-account-wrapper-dark" : ""
         }`}
@@ -80,8 +76,8 @@ const Header: React.FC<props> = ({ darkMode,home, about,project,cert,contact }) 
             <h5>Github</h5>
           </div>
         </a>
-      </div>
-    </section>
+      </div> */}
+    </nav>
   );
 };
 
