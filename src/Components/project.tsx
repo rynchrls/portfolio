@@ -36,19 +36,6 @@ const projectDB = [
       githubOnly: false
   },
   {
-      id: 2,
-      img: `${crypto}`,
-      title: "Crypto Coins",
-      tech: "Tech used: React.js, Sass, CSS3, HTML, Javascript, redux, zustand and RESTful API",
-      description: "An application that connects to a reliable API and lets users search for information about specific cryptocurrency coins, like value and trends.",
-      githubLink: true,
-      github: "https://github.com/rynchrls/crypto-tracker",
-      url: "https://rynchrls.github.io/crypto-tracker/",
-      video: "false",
-      githubOnly: false
-
-  },
-  {
       id: 3,
       img: `${weddie}`,
       title: "Weddie",

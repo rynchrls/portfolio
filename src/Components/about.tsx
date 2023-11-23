@@ -8,7 +8,7 @@ import { useStoreDispatch } from "../lib/aboutStore";
 import { Actions } from "../lib/aboutslice";
 import { useStoreSelector } from "../lib/aboutStore";
 
-import prof from '../Images/profile (2).jpg'
+import prof from '../Images/profile(2).png'
 
 export interface numbersForPercentage {
   percent: string;
