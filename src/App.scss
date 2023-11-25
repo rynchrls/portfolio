@@ -1100,7 +1100,19 @@ a {
       color: var(--font-dark);
       font-weight: 600;
       cursor: pointer;
+      transition: 0.3s;
     }
+    button:focus {
+      background-color: rgba(33, 222, 222, 0.4);
+    }
+    // .focus{
+    //   background-color: var(--primary-dark);
+    //   transition: 0.3s;
+    // }
+    // .focus:focus {
+    //   background-color: var(--primary-dark);
+    //   transition: 0.3s;
+    // }
   }
   p {
     text-align: center;

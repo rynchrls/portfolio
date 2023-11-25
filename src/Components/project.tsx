@@ -2,7 +2,6 @@ import { useState, forwardRef } from "react";
 import SingleProject from "./singleProject";
 
 import school from '../Images/Eskwela.png'
-import crypto from '../Images/crypto.png'
 import weddie from '../Images/weddie.png'
 import nike from '../Images/Nike.png'
 import list from '../Images/todolist.png'

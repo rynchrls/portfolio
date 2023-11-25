@@ -1,4 +1,4 @@
-import { forwardRef, useState } from "react";
+import { forwardRef, useState, useRef } from "react";
 import "../App.scss";
 import axios from "axios";
 
@@ -13,6 +13,7 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const sendRef = useRef<HTMLButtonElement>(null)
 
   const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -69,6 +70,12 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
     } catch (error) {
       console.error(error);
     }
+
+    setTimeout(() => {
+      if(sendRef.current) {
+        sendRef.current.blur()
+      }
+    }, 1000)
   };
 
   return (
@@ -111,7 +118,7 @@ const Contact = forwardRef<HTMLDivElement, dark>(({ darkMode }, ref) => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <button type="submit">Send Message</button>
+        <button type="submit" ref={sendRef}>Send Message</button>
       </form>
       <p className="p-light">© Made by Ryan Charles Alcaraz 2023.</p>
       {darkMode ? (
