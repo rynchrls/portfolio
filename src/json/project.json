@@ -1,0 +1,91 @@
+{
+    "projectDB": [
+        {
+            "id": 1,
+            "img": "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/400595631_2404139296640637_4245213219388386434_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGon6dYIB5tUS0_NMOCvEIxYYRt8WcZ_PVhhG3xZxn89apI8tPpMpAnxxlNby60RwKYQWaZHaHD7MwV4cmJ593p&_nc_ohc=EE9S3b32pKYAX-CtMaU&_nc_oc=AQkL3NKR7HEloH2IT1vnkrLHbtYkSqeCyzxq2QPvF-vLUyU_KdMIbxTB02lHd9jgcPw&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfA8CA_2HvgFD3Plom1bmOtIbO7QzyuyPN8TR1O5KNQPxQ&oe=6557FCA6",
+            "title": "School Admin Dashboard",
+            "tech": "Tech used: React.js, Sass, CSS3, HTML, Javascript, redux, zustand",
+            "description": "A school administration website can be set up to meet the needs of each institution in a personalized way. ",
+            "githubLink": true,
+            "github": "https://github.com/rynchrls/admin-dashboard",
+            "url": "https://rynchrls.github.io/admin-dashboard/",
+            "video": "false",
+            "githubOnly": false
+        },
+        {
+            "id": 2,
+            "img": "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/401610487_2404139286640638_287890914786847421_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE3yBKJIy0lcEIISP3EFU-XAZ2e7r_N-VwBnZ7uv835XHhzcH0K9ImmLahOtRBmPK9IsRETMY523zgiIMBGdjXq&_nc_ohc=p1QMZjla7XkAX_FJtO7&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfAAflnxs-w8aOPeIdzazNv7fPk7u5ALEmUovXYShtELqA&oe=6557783E",
+            "title": "Crypto Coins",
+            "tech": "Tech used: React.js, Sass, CSS3, HTML, Javascript, redux, zustand and RESTful API",
+            "description": "An application that connects to a reliable API and lets users search for information about specific cryptocurrency coins, like value and trends.",
+            "githubLink": true,
+            "github": "https://github.com/rynchrls/crypto-tracker",
+            "url": "https://rynchrls.github.io/crypto-tracker/",
+            "video": "false",
+            "githubOnly": false
+
+        },
+        {
+            "id": 3,
+            "img": "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/401856224_2404139433307290_5330440178570899426_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHmnGKoSNbW9YI8ucrbAvhmzrl7R0MEj1jOuXtHQwSPWORy76eeBguAT0qoZe_wdReejQu1iZSb0Jrkhu1bRtMj&_nc_ohc=t9LrmVeYDWcAX9zC5xw&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD3KOWuOL0RS3jTwzTO11jEjwsEh8-NJ1RlMU_t8l68NA&oe=6556EB7B",
+            "title": "Weddie",
+            "tech": "Tech used: React.js, Sass, CSS3, HTML, Javascript, redux, zustand and RESTful API",
+            "description": "An application that connects to a reliable API and lets users search for the most recent weather information for a particular location worldwide.",
+            "githubLink": true,
+            "github": "https://github.com/rynchrls/weather-app",
+            "url": "https://rynchrls.github.io/weather-app/",
+            "video": "false",
+            "githubOnly": false
+
+        },
+        {
+            "id": 4,
+            "img": "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/400719935_2404146579973242_4599804453263017001_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFWAShPa6bbY59BD-JRMNFBxXsC0dATFcrFewLR0BMVyt4EpgDY6UUaO_rWPosYj-G5KzVRJMdB62zR8z-evT61&_nc_ohc=bnalKIqSmVQAX8UYDiH&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfAgqz2BH19SBYvHBYGvp4748lxB6FzCG-ZpTHr4ktNx8Q&oe=65582843",
+            "title": "Nike Landing Page",
+            "tech": "Tech used: React.js, Sass, CSS3, HTML, Javascript, redux, Three.js and WebGL",
+            "description": "A straightforward Nike landing page that displays a 3D object within the online application.",
+            "githubLink": true,
+            "github": "https://github.com/rynchrls/nike",
+            "url": "https://rynchrls.github.io/nike/",
+            "video": "false",
+            "githubOnly": false
+
+        },
+        {
+            "id": 5,
+            "img": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/400427339_2404139549973945_4288157194907143476_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE4IdzfOvQqGzvwx4EDPA9j9YLPJgATuEH1gs8mABO4QaE32t6drhGLzG24k-wtT1clgEpFZU0IjP4LzU-9MYu4&_nc_ohc=sEYHfqxyR-MAX9d6qhI&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfCAYJGdTfwTlRG8udXsY3GaFbqKtlFrnLB2yaa8IJ5KMg&oe=65587225",
+            "title": "Todo List",
+            "tech": "Tech used: HTML5, CSS3, Javascript and js libraries.",
+            "description": "A straightforward online to-do list tool that manages your tasks for the day, week, month, and year.",
+            "githubLink": false,
+            "github": "https://github.com/rynchrls/Todolist",
+            "url": "",
+            "video": "true",
+            "githubOnly": true
+        },
+        {
+            "id": 6,
+            "img": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/400717244_2404139419973958_4275045966746832442_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFS3-oW5kd5mR2962wl5CvM0pBL0rFVQI3SkEvSsVVAjSmWefWpZUQwD91AO571i0PxxXU9_HuXjgPlSJAj91fS&_nc_ohc=IieHUDT67pcAX9ruBX2&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfBd5IzJQm2HFzivJHN6084EI0vshfijP7RMbIrEEuZ6jA&oe=65582FE4",
+            "title": "PELICULA",
+            "tech": "Tech used: HTML5, CSS3, Javascript,RESTful API and js libraries.",
+            "description": "An application for a movie website that lets users browse and immediately begin watching their favorite film; additionally, you can store all the movies you wish to watch at a later time and create your own video library with.",
+            "githubLink": false,
+            "github": "",
+            "url": "",
+            "video": "https://screenrec.com/share/5OBD8Gduct",
+            "githubOnly": false
+        },
+        {
+            "id": 7,
+            "img": "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/400423203_2404139283307305_5380375279696619175_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHz3_d0dwv_Bz_YmVJ4NmXfW7DvCfRMdxZbsO8J9Ex3Fo6qk_eTX5_z0zj9CXkxUka8PsRUDUPvLkh3J6FZm89W&_nc_ohc=nYQbeJne4bcAX9CXS-c&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfAdQdkM77iaVqstsmNIggQaQPALbyYiYV9csNAKQaGdOA&oe=65574C4E",
+            "title": "School Forms",
+            "tech": "Tech used: HTML5, CSS3, Javascript and js libraries.",
+            "description": "For a project for one of my clients, I made a simple login and enrollment form using javascript, html, and CSS.",
+            "githubLink": false,
+            "github": "",
+            "url": "",
+            "video": "https://screenrec.com/share/hrONxEHul0",
+            "githubOnly": false
+        }
+    ]
+}

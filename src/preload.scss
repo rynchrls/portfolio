@@ -1,0 +1,61 @@
+.loading {
+  background-color: rgba(228, 251, 251, 1);;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  transition: 1s;
+  position: fixed;
+  left: 0;
+  border-radius: 50px;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+  animation-iteration-count: 1;
+  position: fixed;
+}
+
+.loading div {
+  background-color: rgba(33, 222, 222, 1);
+  width: 28px;
+  height: 28px;
+  margin: 28px;
+  border-radius: 50px;
+  animation-name: load912355;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center;
+  justify-content: center;
+}
+
+.loading .g {
+  animation-delay: 0.3s;
+}
+
+.loading .u {
+  animation-delay: 0.6s;
+}
+
+@keyframes load912355 {
+  0% {
+    transform: translateY(50px) scale(1);
+  }
+
+  100% {
+    transform: translateY(10px) scale(1.8) rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
