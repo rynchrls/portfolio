@@ -39,12 +39,12 @@ const Hero = forwardRef<HTMLDivElement, props>(({darkMode}, ref) => {
           <p className="hero-p">Hello there!</p>
           <h2 className="h3-light">I'm Ryan,</h2>
           <h1 className="h1-light">
-            a <span>Front End</span>
+            a <span>Full Stack</span>
           </h1>
           <h2 className="h3-light">Web Developer</h2>
           <p className="p-light margin">
-            A driven and aspirational junior front-end developer from the
-            Philippines who used technology to dominate the web development
+            A driven and aspirational full stack developer from the
+            Philippines who used technology and artificial intelligence to dominate the web development
             industry.
           </p>
           <section className="hero-buttons">

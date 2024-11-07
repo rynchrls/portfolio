@@ -25,7 +25,7 @@ const SingleProject: React.FC<singleProj> = ({ project }) => {
     if (isInview) {
       mainControls.start("visible");
     }
-  }, [isInview]);
+  }, [isInview, mainControls]);
 
   return (
     <motion.div
@@ -45,28 +45,44 @@ const SingleProject: React.FC<singleProj> = ({ project }) => {
       <p>{description}</p>
       {githubLink ? (
         <section>
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-1-a"
-          >
-            <button className="button-1">
-              <FaGithub />
-              <div>Repository</div>
-            </button>
-          </a>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-2-a"
-          >
-            <button className="button-2">
-              <div>Live Demo</div>
-              <FaExternalLinkAlt />
-            </button>
-          </a>
+          {github !== "false" && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-1-a"
+            >
+              <button className="button-1">
+                <FaGithub />
+                <div>Repository</div>
+              </button>
+            </a>
+          )}
+          {github === "false" ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-3-a"
+            >
+              <button className="button-3">
+                <div>Live Demo</div>
+                <FaExternalLinkAlt />
+              </button>
+            </a>
+          ) : (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-2-a"
+            >
+              <button className="button-2">
+                <div>Live Demo</div>
+                <FaExternalLinkAlt />
+              </button>
+            </a>
+          )}
         </section>
       ) : (
         ""
